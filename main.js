@@ -52,7 +52,7 @@ async function captureAndDescribe() {
         role: 'user',
         parts: [
           { inline_data: { mime_type: 'image/jpeg', data: imageBase64 } },
-          { text: 'Describe this scene as to a blind man/woman, make it detailed and useful for navigation/understanding for blind people' }
+          { text: 'Describe this scene as to a blind man/woman, make it detailed and useful for navigation/understanding for blind people in Nepali' }
         ]
       }
     ];
@@ -92,7 +92,7 @@ async function captureAndDescribe() {
 function speakText(text) {
   if ('speechSynthesis' in window) {
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'en-US';  // Set the language of the speech
+    utterance.lang = 'ne-NP';  // Set the language of the speech
     utterance.rate = 1; 
     speechSynthesis.speak(utterance);
   } else {
