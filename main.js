@@ -92,7 +92,7 @@ async function captureAndDescribe() {
 function speakText(text) {
   if ('speechSynthesis' in window) {
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'ne-NP';  // Set the language of the speech
+    utterance.lang = 'hi-IN';  // Set the language of the speech
     utterance.rate = 1; 
     speechSynthesis.speak(utterance);
   } else {
